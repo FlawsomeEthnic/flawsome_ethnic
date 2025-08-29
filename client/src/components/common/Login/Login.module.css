@@ -1,0 +1,211 @@
+.Login {
+    padding: 4rem 2rem;
+}
+
+.Login h2 {
+    font-size: 2rem;
+    color: var(--cambridge-blue);
+    width: 100%;
+    text-align: left;
+    line-height: 85%;
+    font-family: 'Inter';
+}
+
+.Login>div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background: var(--cambridge-blue);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 12px 6px;
+    border: 4px solid var(--delft-blue);
+    height: 600px;
+}
+
+.Login>div>div {
+    width: 70%;
+    height: 100%;
+    border-right: 4px solid var(--delft-blue);
+}
+
+.Login>div>form {
+    padding: 1rem;
+    background-color: var(--delft-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--sunset);
+    width: 30%;
+    gap: 1rem;
+}
+
+.Login>div>form>div {
+    width: 100%;
+}
+
+.Login>div>form>button {
+    margin: 1rem 0;
+    font-family: 'Inter';
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Login>div>form>div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.Login form>div>div {
+    margin-top: 0.5rem;
+}
+
+.Login a {
+    text-align: center;
+    padding: 0.25rem 1rem;
+    background-color: var(--eggshell);
+    color: var(--delft-blue);
+    font-size: 1rem;
+    border: 0.125rem solid var(--delft-blue);
+    border-radius: 100px;
+    font-weight: 400;
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.SlideImage {
+    object-fit: cover;
+    max-height: 610px;
+    border: 2px solid var(--delft-blue);
+    height: 100%;
+    width: 50% !important;
+    vertical-align: top;
+    border: 0;
+    object-position: top;
+}
+
+.Slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.Slide h2 {
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    font-weight: 800;
+    bottom: 10%;
+    left: 3%;
+    color: var(--sunset);
+    z-index: 1;
+    text-shadow: 0px 0px 10px #0000007a;
+    text-align: left;
+}
+
+.Slide h3 {
+    font-size: 1rem;
+    font-family: 'Inter';
+    bottom: 3%;
+    right: 3%;
+    font-weight: 400;
+    color: var(--sunset);
+    z-index: 1;
+    text-shadow: 0px 0px 10px #0000007a;
+    text-align: left;
+}
+
+.Slide .details {
+    position: absolute;
+    background: #0000008a;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    right: 0;
+    padding: 15rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Slide .blurBackground {
+    position: absolute;
+    top: 0;
+    width: 70%;
+    right: 0;
+    bottom: 0;
+    padding: 15rem 4rem;
+    background: linear-gradient(270deg, rgba(37, 10, 35, 1) 0%, rgb(0 0 0) 72%, rgba(196, 173, 204, 0) 100%);
+    z-index: 1;
+}
+
+.Login p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Login .OTPbuttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Login .OTPbuttons p {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+
+
+@media screen and (max-width: 768px) {
+    .Slide .SlideImage {
+        width: 100% !important;
+    }
+
+    .Slide .Slide h2 {
+        font-size: 1.5rem;
+    }
+
+    .Slide .Slide h3 {
+        font-size: 1rem;
+    }
+
+    .Slide .details {
+        padding: 1rem;
+        bottom: 0;
+        top: unset;
+        right: 0;
+        left: 0;
+        gap: 0;
+        width: 100%;
+    }
+
+    .HeroSlider .blurBackground {
+        display: none;
+    }
+}
+
+.Login>div:nth-child(1)>div:nth-child(1)>* {
+    height: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .Login>div>div {
+        width: 0;
+        border: 0;
+    }
+
+    .Login>div>form {
+        width: 100%;
+    }
+}
